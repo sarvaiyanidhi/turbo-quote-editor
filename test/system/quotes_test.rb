@@ -20,7 +20,7 @@ class QuotesTest < ApplicationSystemTestCase
   test "Show Quote" do
     visit quotes_path
     click_link @quote.name
-    assert_selector "h1", text: !quote.name
+    assert_selector "h1", text: @quote.name
   end
 
   test "Updating Quote" do
